@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #FAF7F2;
+    color: #1A1918;
+    letter-spacing: -0.011em;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.03em;
+  }
+
+  /* Luxury Clean White Card with Thin Warm Border & Soft Shadow */
+  .card-luxury {
+    background-color: #FFFFFF;
+    border: 1px solid #EAE5D9;
+    border-radius: 1rem; /* 16px */
+    box-shadow: 0 2px 8px rgba(26, 25, 24, 0.04);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .card-luxury:hover {
+    border-color: #D9D2C2;
+    box-shadow: 0 6px 20px rgba(26, 25, 24, 0.07);
+  }
+
+  /* Charcoal Black Card with Metallic Gold Border */
+  .card-charcoal {
+    background-color: #141414;
+    color: #FAF7F2;
+    border: 1px solid #2A2825;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Metallic Gold Primary Accent Button */
+  .btn-gold {
+    background-color: #C5A059;
+    color: #0F0F0F;
+    font-weight: 600;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .btn-gold:hover {
+    background-color: #B59048;
+    box-shadow: 0 4px 14px rgba(197, 160, 89, 0.3);
+    transform: translateY(-1px);
+  }
+
+  .btn-gold:active {
+    transform: translateY(0);
+  }
+
+  /* Secondary Charcoal Black Button */
+  .btn-charcoal {
+    background-color: #1A1918;
+    color: #FAF7F2;
+    font-weight: 600;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .btn-charcoal:hover {
+    background-color: #2A2826;
+    box-shadow: 0 4px 14px rgba(26, 25, 24, 0.2);
+    transform: translateY(-1px);
+  }
+
+  /* Secondary Neutral Cream Button */
+  .btn-neutral {
+    background-color: #FFFFFF;
+    color: #1A1918;
+    border: 1px solid #EAE5D9;
+    font-weight: 600;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .btn-neutral:hover {
+    background-color: #FAF7F2;
+    border-color: #D9D2C2;
+  }
+}
+
+/* Subtle minimal luxury scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D9D2C2;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
